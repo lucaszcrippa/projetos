@@ -1,0 +1,74 @@
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Simples com Materialize CSS - Abas</title>
+  <!-- Adicionando Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Ícones do Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Estilos customizados -->
+  <style>
+    /* Estilos personalizados, se necessário */
+  </style>
+</head>
+<body>
+
+ 
+
+  <!-- Abas -->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a href="#tab1">Introdução</a></li>
+            <li class="tab col s3"><a href="#tab2">Sistema de Grid </a></li>
+            <li class="tab col s3"><a href="#tab3">Principios</a></li>
+          </ul>
+        </div>
+        <div id="tab1" class="col s12">Materialize CSS é um framework de front-end baseado nos princípios de Material Design, desenvolvido pelo Google. Ele fornece uma coleção de estilos CSS,
+             componentes e plugins JavaScript que facilitam a criação de interfaces de usuário modernas e responsivas</div>
+        <div id="tab2" class="col s12">Grid System: Sistema de grade utilizado para criar layouts responsivos. Ele é baseado em 12 colunas e permite ajustar o layout de acordo com diferentes tamanhos de tela.
+        </div>
+        <div id="tab3" class="col s12">Conteúdo da Tab 3</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Rodapé</h5>
+          <p class="grey-text text-lighten-4">Informações de rodapé.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    // Inicialização de abas (tabs) do Materialize
+    document.addEventListener('DOMContentLoaded', function() {
+      var tabs = document.querySelectorAll('.tabs');
+      M.Tabs.init(tabs);
+    });
+  </script>
+
+</body>
+</html>
+
